@@ -88,8 +88,6 @@
             </plugins>
         </pluginManagement>
 
-
-
         <plugins>
             <plugin>
                 <artifactId>maven-dependency-plugin</artifactId>
@@ -111,7 +109,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>fr.usubelli.user.RunOrganizationVertx</mainClass>
+                            <mainClass>fr.usubelli.accounting.organization.RunOrganizationVertx</mainClass>
                             <classpathPrefix>libs/</classpathPrefix>
                         </manifest>
                     </archive>

@@ -33,9 +33,9 @@ public class VertxConfiguration {
     public int getPort() {
         int port;
         try {
-            port = Integer.parseInt(command.getOptionValue("port", String.valueOf(8585)));
+            port = Integer.parseInt(command.getOptionValue("port", String.valueOf(8686)));
         } catch (NumberFormatException e) {
-            port = 8585;
+            port = 8686;
         }
         return port;
     }
