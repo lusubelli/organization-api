@@ -7,4 +7,5 @@ COPY ssl/ ssl/
 
 EXPOSE 8686
 
-ENTRYPOINT ["java", "-DLogback.configurationFile=config/logback.xml", "-jar", "organization-api-1.0-SNAPSHOT.jar", "--auth-htpasswd-path", "config/.htpasswd", "--config", "config/application.conf", "--ssl-keystore", "ssl/localhost.keystore", "--ssl-password", "password", "-cp", "libs/*" ]
+# , "--ssl-keystore", "ssl/localhost.keystore", "--ssl-password", "password"
+ENTRYPOINT ["java", "-DLogback.configurationFile=config/logback.xml", "-jar", "organization-api-1.0-SNAPSHOT.jar", "--auth-htpasswd-path", "config/.htpasswd", "--config", "config/application.conf", "-cp", "libs/*" ]
